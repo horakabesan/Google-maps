@@ -23,18 +23,11 @@ body {
 }
 
 ul {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 400px;
   list-style: none;
   overflow-y: scroll;
   background-color: #eee;
   padding: 0 16px;
-  /* display: flex;
-  flex-direction: column;
-  grid-gap: 20px; */
-  z-index: 10;
 }
 
 li {
@@ -98,11 +91,3 @@ li > .address {
   font-size: 0.8rem;
 }
 
-/* ########### 599px以下 ########### */
-@media (max-width: 599px) {
-
-  ul{
-      height: 50%;
-  }
-
-}
