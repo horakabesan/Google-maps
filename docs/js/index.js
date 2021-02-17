@@ -79,7 +79,7 @@ function buildInfoConstent (data) {
     const nameTag = $('<h2>').text(data.name).addClass('name');
     const addressTag = $('<p>').text(data.address).addClass('address');
     
-    const divTag = $('<dov>').append(nameTag).append(addressTag);
+    const divTag = $('<div>').append(nameTag).append(addressTag);
 
     return divTag[0];
 };
