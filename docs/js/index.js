@@ -78,8 +78,9 @@ function bulidListItem (data) {
 function buildInfoConstent (data) {
     const nameTag = $('<h2>').text(data.name).addClass('name');
     const addressTag = $('<p>').text(data.address).addClass('address');
+    const RegularholidayTag = $('<p>').text(data.Regular_holiday).addClass('Regular_holiday');
     
-    const divTag = $('<div>').append(nameTag).append(addressTag);
+    const divTag = $('<div>').append(nameTag).append(addressTag).append(RegularholidayTag);
 
     return divTag[0];
 };
