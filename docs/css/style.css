@@ -1,0 +1,85 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  flex: 1;
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+}
+
+ul {
+  width: 400px;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+li {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 16px;
+  border: 5px solid #fff;
+}
+
+li.selected {
+  border: 5px solid rgb(255, 153, 153);
+  background-color: rgb(255, 153, 153);
+  transition: background-color 1.0s,border 1.0s;
+}
+
+li:hover {
+  border: 5px solid rgb(255, 153, 153);
+  box-sizing: border-box;
+}
+
+li > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+li > img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+li > .name {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+li > .address {
+  font-size: 14px;
+}
+
+.Regular_holiday{
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.sales_time_am{
+  padding: 0 10px 0 10px;
+  font-size: 0.8rem;
+}
+
+.sales_time_pm{
+  padding: 0 10px 10px 10px;
+  font-size: 0.8rem;
+}
