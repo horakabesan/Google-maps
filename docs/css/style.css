@@ -23,14 +23,18 @@ body {
 }
 
 ul {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 400px;
   list-style: none;
   overflow-y: scroll;
   background-color: #eee;
-  padding: 16px;
-  display: flex;
+  padding: 0 16px;
+  /* display: flex;
   flex-direction: column;
-  grid-gap: 20px;
+  grid-gap: 20px; */
+  z-index: 10;
 }
 
 li {
@@ -39,7 +43,7 @@ li {
   border: 5px solid #eee;
   border-radius: 20px;
   background-color: #fff;
-
+  margin: 16px 0;
 }
 
 li.selected {
@@ -92,4 +96,13 @@ li > .address {
 .sales_time_pm{
   padding: 0 20px 10px 20px;
   font-size: 0.8rem;
+}
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+
+  ul{
+      height: 50%;
+  }
+
 }
